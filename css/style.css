@@ -1,0 +1,580 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: Martel;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+  height: 100%;
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    color: #fff;
+    background: linear-gradient(
+        to left,
+        rgba(136, 149, 218, 0.52),
+        rgba(54, 55, 76, 1)
+      ),
+      url(../img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg) center top
+        no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 600px) {
+  .header {
+    color: #fff;
+    background: linear-gradient(
+        to left,
+        rgba(136, 149, 218, 0.52),
+        rgba(54, 55, 76, 1)
+      ),
+      url(../img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg) center right
+        no-repeat;
+    background-size: cover;
+  }
+}
+h1,
+.h1 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0;
+}
+h2,
+.h2 {
+  position: relative;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+h3,
+.h3 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+h4,
+.h4 {
+  font-size: inherit;
+  font-weight: 700;
+  margin: 10px 0;
+}
+strong {
+  font-weight: 700;
+}
+p {
+  margin: 10px 0 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #11315f;
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  outline: none;
+}
+.icon {
+  display: inline-block;
+  font-size: 50px;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.content {
+  position: relative;
+  background-color: #fff;
+}
+.rel-1 {
+  position: relative;
+  z-index: 1;
+}
+.masked {
+  position: relative;
+}
+.masked:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bgc-white {
+  background-color: #fff;
+}
+.bgc-primary {
+  background-color: #11315f;
+}
+.bgc-light-gray {
+  background-color: #f5f5f5;
+}
+.bgc-yellow {
+  background-color: #11315f;
+}
+.text-white {
+  color: #fff;
+}
+.text-muted {
+  opacity: 0.6;
+  color: inherit;
+}
+.text-primary {
+  color: #866f9c;
+}
+.text-yellow {
+  color: #11315f;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 0;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+  margin-left: 0;
+}
+.navbar-collapse {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  max-height: 320px;
+}
+.navbar-toggle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+}
+.navbar.affix {
+  position: fixed;
+  background-color: #11315f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.navbar.affix .Logo_text {
+  font-size: 33px;
+}
+.Logo_text {
+  font-size: 25px;
+  font-family: 'Martel';
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.Logo_text .circle {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #11315f;
+  margin-left: -3px;
+  border-radius: 50%;
+}
+.Logo_text:hover .circle {
+  background-color: #fff;
+}
+.Logo_text:focus {
+  color: #fff;
+}
+.Logo_text:hover {
+  color: #a08f61;
+}
+.navbar-nav {
+  margin-top: 23px;
+  font-weight: 500;
+}
+.navbar-nav > li > a {
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > .active > a {
+  color: #333;
+  background-color: #11315f;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.masthead {
+  padding: 170px 0 120px;
+  height: 100vh;
+}
+.masthead-text {
+  font-family: Martel;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.p_text {
+  font-family: Martel;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  top: 134px;
+}
+.r-more_btn {
+  position: absolute;
+  width: 104px;
+  height: 33px;
+  background: #a08f61;
+  top: 194px;
+  display: inline-block;
+}
+/* .btn_wrap{
+    margin: 200px;
+} */
+.wrap_left_top {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #897f5d;
+  text-align: center;
+}
+.p_text_white {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.wrap_left1 {
+  top: 194px;
+}
+@media (min-width: 480px) {
+  h1,
+  .h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .right_wrap {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    padding-bottom: 10px;
+  }
+  .navbar.affix-top {
+    padding: 30px 0;
+    background: 0 0;
+    box-shadow: none;
+  }
+  .navbar.affix .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar-nav > li {
+    margin-left: 30px;
+  }
+  .navbar-nav > li:first-child {
+    margin-left: 0;
+  }
+  .navbar-nav > li > a {
+    padding: 0;
+  }
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > .active > a {
+    background-color: transparent;
+    color: white;
+  }
+  .Logo_text {
+    font-size: 30px;
+  }
+  .masthead {
+    padding: 250px 0 200px;
+  }
+}
+
+.service_group {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 92%,
+    #fafafa 8%,
+    #fafafa 100%
+  );
+  position: static;
+  margin-top: -6%;
+}
+
+.service_box {
+  padding: 30px 30px 0 70px;
+  width: 100%px;
+  height: 271px;
+}
+
+.service_boxes1 {
+  background-color: #f7f7f7;
+}
+
+.service_boxes2 {
+  background-color: #a08f61;
+}
+
+.service_boxes3 {
+  background-color: #f7f7f7;
+}
+
+.service_box p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.service_numbers {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #cecfce;
+}
+
+.legal_services {
+  background: linear-gradient(
+      to left,
+      rgba(136, 149, 218, 0.52),
+      rgba(54, 55, 76, 1)
+    ),
+    url(../img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.s_text {
+  padding-top: 50%;
+  font-family: Martel;
+  letter-spacing: 0.2px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+.s_para {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+
+.legal_service_box {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.dealing_box {
+  height: 270px;
+  background-color: #ffffff;
+  margin-left: 10px;
+
+  margin-bottom: 10px;
+}
+
+.dealing_box h1 {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  padding-top: 60px;
+}
+.qualified_lawyers {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+.qualified_lawysers_p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.profile_img {
+  padding: 10px 10px;
+}
+
+.profile_card {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.profile_title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #d0a144;
+}
+
+.profile_name {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.profile_text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.choose_section {
+  background: linear-gradient(
+      to left,
+      rgba(136, 149, 218, 0.52),
+      rgba(54, 55, 76, 1)
+    ),
+    url(../img/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 430px;
+}
+
+.choose_text {
+  font-family: Martel;
+  letter-spacing: 0.2px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 18%;
+  color: #ffffff;
+}
+
+.choose_para {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.choose_section h4 {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+.faq {
+  margin-top: 130px;
+  background-color: #f7f7f7;
+  padding-top: 30px;
+}
+
+.que {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+
+  color: #000000;
+}
+
+.faq_text {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #6d6d6d;
+}
+
+.faq_box {
+  border: 2px solid black;
+  margin: 25px 0;
+  padding: 20px 10px;
+}
+
+.faq_box p {
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+
+  letter-spacing: 0.2px;
+
+  color: #000000;
+}
+
+@media (max-width: 480px) {
+  .choose_text {
+    padding-top: 10px;
+  }
+}
